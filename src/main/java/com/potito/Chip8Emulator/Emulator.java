@@ -14,7 +14,7 @@ public class Emulator {
         Chip8 chip8 = new Chip8();
         chip8.addOnRenderListener(onRenderListener);
         chip8.loadROM(romPath);
-        //chip8.run();
+        chip8.run();
 
     }
 

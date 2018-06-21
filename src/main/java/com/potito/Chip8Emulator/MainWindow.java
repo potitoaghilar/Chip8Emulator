@@ -9,6 +9,8 @@ public class MainWindow extends JFrame {
     private int height;
     private int zoom;
 
+    JPanel mainContent = new JPanel();
+
     public MainWindow(String title, int width, int height, int zoom) {
         super(title);
 
@@ -17,26 +19,31 @@ public class MainWindow extends JFrame {
         this.zoom = zoom;
 
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        this.pack();
-        Insets insets = this.getInsets();
-        this.setBounds(0, 0, width + insets.left + insets.right, height + insets.top + insets.bottom);
+        this.setSize(width * zoom, height * zoom);
         this.setLocationRelativeTo(null);
         this.setVisible(true);
+        this.setResizable(false);
+        mainContent.setSize(width * zoom, height * zoom);
+        this.add(mainContent);
+
+        // Render first black frame
+        render(new byte[width * height]);
     }
 
     public void render(byte[] pixels) {
 
+        Graphics g = mainContent.getGraphics();
+
         for(int y = 0; y < height; y++) {
             for(int x = 0; x < width; x++) {
 
-                int pixelColor = pixels[]
-                this.getGraphics().setColor(new Color());
+                int pixelColor = Utils.convertToUnsigned(pixels[y * width + x]);
+                g.setColor(new Color(pixelColor, pixelColor, pixelColor));
 
-                this.getGraphics().fillRect(x, y, zoom, zoom);
+                g.fillRect(x * zoom, y * zoom, zoom, zoom);
 
             }
         }
 
     }
-
 }
