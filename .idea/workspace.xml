@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e614e4d-9b96-428e-aaaf-e2c1a8cc8353" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/Chip8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/Emulator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/Emulator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/UByte.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/Utils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/potito/Chip8Emulator/Utils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Chip8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Chip8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Emulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Emulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Registers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Registers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Stack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/UByte.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Utils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -71,8 +59,8 @@
       <file leaf-file-name="Chip8.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Chip8.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="143" column="79" lean-forward="true" selection-start-line="143" selection-start-column="79" selection-end-line="143" selection-end-column="79" />
+            <state relative-caret-position="423">
+              <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1554#1555#0" expanded="true" />
@@ -82,6 +70,15 @@
                 <element signature="e#2987#2988#0" expanded="true" />
                 <element signature="e#3034#3035#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Thread.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="227">
+              <caret line="744" selection-start-line="744" selection-end-line="744" />
             </state>
           </provider>
         </entry>
@@ -105,12 +102,11 @@
       <file leaf-file-name="Memory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Memory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#121#122#0" expanded="true" />
                 <element signature="e#167#168#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
                 <element signature="e#241#242#0" expanded="true" />
                 <element signature="e#288#289#0" expanded="true" />
                 <element signature="e#333#334#0" expanded="true" />
@@ -625,12 +621,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529577073991</updated>
-      <workItem from="1529577075477" duration="22899000" />
+      <workItem from="1529577075477" duration="26526000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22899000" />
+    <option name="totallyTimeSpent" value="26526000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -647,7 +643,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.27124184" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27124184" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Messages" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" />
@@ -677,11 +673,26 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="41" />
+      <option name="time" value="44" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>memory.memory[0x2F4]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>memory.memory[0x2F3]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>memory.memory[0x2F2]</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>I</expression-string>
         <language-id>JAVA</language-id>
@@ -723,21 +734,6 @@
             <element signature="e#181#182#0" expanded="true" />
             <element signature="e#225#226#0" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Memory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#121#122#0" expanded="true" />
-            <element signature="e#167#168#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-            <element signature="e#241#242#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -806,10 +802,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="744" selection-start-line="744" selection-end-line="744" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Memory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+            <element signature="e#333#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/potito/Chip8Emulator/Chip8.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="143" column="79" lean-forward="true" selection-start-line="143" selection-start-column="79" selection-end-line="143" selection-end-column="79" />
+        <state relative-caret-position="423">
+          <caret line="156" lean-forward="true" selection-start-line="156" selection-end-line="156" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1554#1555#0" expanded="true" />

@@ -30,6 +30,10 @@ public class Chip8 {
     // OnRender event handler
     private ArrayList<OnRenderListener> onRenderListeners = new ArrayList<>();
 
+    // Font (Sprite)
+    private static short memorySpriteEntryPoint = 0x0; // Sprites are loaded between 0x0 and 0x200
+    private static int spriteSize = 4 * 5; // 20 byte per sprite
+
     public Chip8() {
 
         // Create objects
@@ -105,6 +109,15 @@ public class Chip8 {
                 break;
             }
 
+            case 0x7000: { // Adds NN to VX. (Carry flag is not changed)
+                byte x = (byte)((opcode & 0x0F00) >> 8);
+                byte nn = (byte)(opcode & 0x00FF);
+                byte sumNoCarry = (byte)(registers.getRegister(x) + nn);
+                registers.setRegister(x, sumNoCarry);
+                System.out.println("Adds " + Utils.hexValue(nn, true) + " to V" + Utils.hexValue(x, false) + ". Result: " + Utils.hexValue(sumNoCarry, true));
+                break;
+            }
+
             case 0xA000: { // Sets I to the address NNN.
                 short nnn = (short)(opcode & 0x0FFF);
                 I = nnn;
@@ -121,6 +134,12 @@ public class Chip8 {
             case 0xF000: {
 
                 switch (opcode & 0x00FF) {
+
+                    case 0x0029: { // Sets I to the location of the sprite for the character in VX. Characters 0-F (in hexadecimal) are represented by a 4x5 font.
+                        I = memory.get(memorySpriteEntryPoint + spriteSize * ((opcode & 0x0F00) >> 8));
+                        System.out.println("Sets I to " + Utils.hexValue(I, true));
+                        break;
+                    }
 
                     case 0x0033: { // Take the decimal representation of VX, place the hundreds digit in memory at location in I, the tens digit at location I+1, and the ones digit at location I+2
                         byte vx = registers.getRegister((byte)((opcode & 0x0F00) >> 8));
@@ -155,8 +174,8 @@ public class Chip8 {
                     }
 
                 }
-                break;
 
+                break;
             }
 
             default: {
